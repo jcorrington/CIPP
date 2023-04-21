@@ -90,8 +90,8 @@ const _nav = [
       },
       {
         component: CNavItem,
-        name: 'Basic Auth Report',
-        to: '/identity/reports/basic-auth-report',
+        name: 'Inactive Users',
+        to: '/identity/reports/inactive-users-report',
       },
       {
         component: CNavItem,
@@ -442,14 +442,14 @@ const _nav = [
   },
   {
     component: CNavGroup,
-    name: 'Sharepoint',
+    name: 'SharePoint',
     section: 'Teams & Sharepoint',
     to: '/teams-share/sharepoint',
     icon: <FontAwesomeIcon icon={faLink} className="nav-icon" />,
     items: [
       {
         component: CNavItem,
-        name: 'Sharepoint',
+        name: 'SharePoint',
         to: '/teams-share/sharepoint/list-sharepoint',
       },
     ],
@@ -606,6 +606,11 @@ const _nav = [
         name: 'Phishing Policies',
         to: '/email/reports/phishing-policies',
       },
+      {
+        component: CNavItem,
+        name: 'Shared Mailbox with Enabled Account',
+        to: '/email/reports/SharedMailboxEnabledAccount',
+      },
     ],
   },
   {
@@ -644,6 +649,16 @@ const _nav = [
     to: '/cipp/gdap',
     icon: <FontAwesomeIcon icon={faUserShield} className="nav-icon" />,
     items: [
+      {
+        component: CNavItem,
+        name: 'Role Wizard',
+        to: '/tenant/administration/gdap-role-wizard',
+      },
+      {
+        component: CNavItem,
+        name: 'GDAP Roles',
+        to: '/tenant/administration/gdap-roles',
+      },
       {
         component: CNavItem,
         name: 'Migration Wizard',
